@@ -1,0 +1,64 @@
+[0.011s] Invoking command in '/home/ws/build/allan_variance_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target allan_variance_ros2_msg__rosidl_generator_c[0m
+[0.051s] [  2%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/yaml_parsers.cpp.o[0m
+[0.052s] [ 10%] Built target allan_variance_ros2_msg__rosidl_generator_c
+[0.052s] [ 13%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/ImuMeasurement.cpp.o[0m
+[0.053s] [ 16%] Built target allan_variance_ros2_msg__cpp
+[0.053s] [ 18%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o[0m
+[0.061s] [ 18%] Built target ament_cmake_python_symlink_allan_variance_ros2
+[0.062s] [ 24%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.062s] [ 24%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target allan_variance_ros2_msg__rosidl_typesupport_introspection_cpp[0m
+[0.062s] [ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.063s] [35m[1mConsolidate compiler generated dependencies of target allan_variance_ros2_msg__rosidl_typesupport_cpp[0m
+[0.063s] [35m[1mConsolidate compiler generated dependencies of target allan_variance_ros2_msg__rosidl_typesupport_fastrtps_cpp[0m
+[0.063s] [01m[K/home/ws/src/src/AllanVarianceComputor.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kallan_variance_ros/AllanVarianceComputor.hpp: No such file or directory
+[0.064s]     2 | #include [01;31m[K"allan_variance_ros/AllanVarianceComputor.hpp"[m[K
+[0.064s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.064s] compilation terminated.
+[0.073s] gmake[2]: *** [CMakeFiles/allan_variance_ros2.dir/build.make:104: CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o] Error 1
+[0.073s] gmake[2]: *** Waiting for unfinished jobs....
+[0.076s] [ 43%] Built target allan_variance_ros2_msg__rosidl_typesupport_cpp
+[0.076s] [ 43%] Built target allan_variance_ros2_msg__rosidl_typesupport_introspection_cpp
+[0.079s] [ 51%] Built target allan_variance_ros2_msg__rosidl_typesupport_fastrtps_cpp
+[0.264s] running egg_info
+[0.265s] writing allan_variance_ros2.egg-info/PKG-INFO
+[0.265s] writing dependency_links to allan_variance_ros2.egg-info/dependency_links.txt
+[0.266s] writing top-level names to allan_variance_ros2.egg-info/top_level.txt
+[0.268s] [ 54%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/allan_variance_ros2/msg/imu9_do_f__type_support.cpp.o[0m
+[0.269s] reading manifest file 'allan_variance_ros2.egg-info/SOURCES.txt'
+[0.270s] writing manifest file 'allan_variance_ros2.egg-info/SOURCES.txt'
+[0.285s] [ 56%] [32mBuilding C object CMakeFiles/allan_variance_ros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/allan_variance_ros2/msg/detail/imu9_do_f__type_support.c.o[0m
+[0.287s] [ 59%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/allan_variance_ros2/msg/detail/imu9_do_f__type_support_c.cpp.o[0m
+[0.295s] [ 59%] Built target ament_cmake_python_build_allan_variance_ros2_egg
+[0.298s] [ 62%] [32m[1mLinking CXX shared library liballan_variance_ros2_msg__rosidl_typesupport_c.so[0m
+[0.314s] [ 64%] [32m[1mLinking C shared library liballan_variance_ros2_msg__rosidl_typesupport_introspection_c.so[0m
+[0.334s] [ 64%] Built target allan_variance_ros2_msg__rosidl_typesupport_c
+[0.340s] [ 64%] Built target allan_variance_ros2_msg__rosidl_typesupport_introspection_c
+[0.585s] [ 67%] [32m[1mLinking CXX shared library liballan_variance_ros2_msg__rosidl_typesupport_fastrtps_c.so[0m
+[0.693s] [ 67%] Built target allan_variance_ros2_msg__rosidl_typesupport_fastrtps_c
+[0.714s] [ 67%] Built target allan_variance_ros2_msg
+[0.731s] [ 70%] [34m[1mGenerating Python code for ROS interfaces[0m
+[0.867s] [01m[K/home/ws/src/src/ImuMeasurement.cpp:[m[K In constructor ‘[01m[KImuMeasurement::ImuMeasurement(uint64_t, const Vector3d&, const Vector3d&)[m[K’:
+[0.867s] [01m[K/home/ws/src/src/ImuMeasurement.cpp:12:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_I_a_WI[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.867s]    12 |                                [01;35m[Kconst Eigen::Vector3d& _I_a_WI[m[K,
+[0.867s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[0.867s] [01m[K/home/ws/src/src/ImuMeasurement.cpp:13:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_I_w_WI[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.867s]    13 |                                [01;35m[Kconst Eigen::Vector3d& _I_w_WI[m[K){
+[0.867s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[1.001s] [ 70%] Built target allan_variance_ros2_msg__py
+[1.015s] [ 72%] [32mBuilding C object CMakeFiles/allan_variance_ros2_msg__rosidl_generator_py.dir/rosidl_generator_py/allan_variance_ros2/msg/_imu9_do_f_s.c.o[0m
+[1.098s] [ 75%] [32m[1mLinking C shared library rosidl_generator_py/allan_variance_ros2/liballan_variance_ros2_msg__rosidl_generator_py.so[0m
+[1.130s] [ 75%] Built target allan_variance_ros2_msg__rosidl_generator_py
+[1.145s] [ 78%] [32mBuilding C object CMakeFiles/allan_variance_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/allan_variance_ros2/_allan_variance_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.146s] [ 83%] [32mBuilding C object CMakeFiles/allan_variance_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/allan_variance_ros2/_allan_variance_ros2_s.ep.rosidl_typesupport_c.c.o[0m
+[1.146s] [ 83%] [32mBuilding C object CMakeFiles/allan_variance_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/allan_variance_ros2/_allan_variance_ros2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.235s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/allan_variance_ros2/allan_variance_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.235s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/allan_variance_ros2/allan_variance_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.236s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/allan_variance_ros2/allan_variance_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.268s] [ 91%] Built target allan_variance_ros2__rosidl_typesupport_introspection_c__pyext
+[1.268s] [ 91%] Built target allan_variance_ros2__rosidl_typesupport_c__pyext
+[1.268s] [ 91%] Built target allan_variance_ros2__rosidl_typesupport_fastrtps_c__pyext
+[1.377s] gmake[1]: *** [CMakeFiles/Makefile2:184: CMakeFiles/allan_variance_ros2.dir/all] Error 2
+[1.377s] gmake: *** [Makefile:146: all] Error 2
+[1.378s] Invoked command in '/home/ws/build/allan_variance_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12

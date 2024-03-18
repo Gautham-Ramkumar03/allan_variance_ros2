@@ -1,0 +1,390 @@
+[0.000000] (-) TimerEvent: {}
+[0.000500] (allan_variance_msgs) JobQueued: {'identifier': 'allan_variance_msgs', 'dependencies': OrderedDict()}
+[0.000561] (allan_variance_ros2) JobQueued: {'identifier': 'allan_variance_ros2', 'dependencies': OrderedDict([('allan_variance_msgs', '/home/ws/install/allan_variance_msgs')])}
+[0.000611] (allan_variance_msgs) JobStarted: {'identifier': 'allan_variance_msgs'}
+[0.009925] (allan_variance_msgs) JobProgress: {'identifier': 'allan_variance_msgs', 'progress': 'cmake'}
+[0.010186] (allan_variance_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ws/src/allan_variance_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ws/install/allan_variance_msgs'], 'cwd': '/home/ws/build/allan_variance_msgs', 'env': OrderedDict([('HOSTNAME', 'als-of-wl2912'), ('ROS_PACKAGE_PATH', '/home/ws/install/allan_variance_ros2/share:/home/ws/install/allan_variance_ros/share'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/install/allan_variance_ros2/lib:/home/ws/install/allan_variance_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/home/christian-nils'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-a682c045-47ff-47f6-be64-7e06d8baac35.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ws/install/allan_variance_ros2/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros2/lib/pkgconfig:/home/ws/install/allan_variance_ros/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock","/tmp/.X11-unix/X1","/home/christian-nils/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-36fc3ff94f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/allan_variance_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble')]), 'shell': False}
+[0.058751] (allan_variance_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099158] (-) TimerEvent: {}
+[0.102430] (allan_variance_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.108442] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.158708] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.165368] (allan_variance_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.165559] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.165949] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.168442] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199282] (-) TimerEvent: {}
+[0.227827] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.235399] (allan_variance_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.235593] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.236069] (allan_variance_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.238108] (allan_variance_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299396] (-) TimerEvent: {}
+[0.381416] (allan_variance_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.399481] (-) TimerEvent: {}
+[0.435735] (allan_variance_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.457411] (allan_variance_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.484421] (allan_variance_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.488934] (allan_variance_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.496189] (allan_variance_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.499588] (-) TimerEvent: {}
+[0.508045] (allan_variance_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.527018] (allan_variance_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.586182] (allan_variance_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.599718] (-) TimerEvent: {}
+[0.629207] (allan_variance_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.699799] (-) TimerEvent: {}
+[0.800035] (-) TimerEvent: {}
+[0.876874] (allan_variance_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.900159] (-) TimerEvent: {}
+[1.000403] (-) TimerEvent: {}
+[1.100700] (-) TimerEvent: {}
+[1.201015] (-) TimerEvent: {}
+[1.234295] (allan_variance_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.301081] (-) TimerEvent: {}
+[1.376076] (allan_variance_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.396025] (allan_variance_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.397313] (allan_variance_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.401162] (-) TimerEvent: {}
+[1.417332] (allan_variance_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.417467] (allan_variance_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.417525] (allan_variance_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.417575] (allan_variance_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.435075] (allan_variance_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.494774] (allan_variance_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.501233] (-) TimerEvent: {}
+[1.521868] (allan_variance_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.523907] (allan_variance_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ws/build/allan_variance_msgs\n'}
+[1.528421] (allan_variance_msgs) CommandEnded: {'returncode': 0}
+[1.528892] (allan_variance_msgs) JobProgress: {'identifier': 'allan_variance_msgs', 'progress': 'build'}
+[1.529732] (allan_variance_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ws/build/allan_variance_msgs', '--', '-j12', '-l12'], 'cwd': '/home/ws/build/allan_variance_msgs', 'env': OrderedDict([('HOSTNAME', 'als-of-wl2912'), ('ROS_PACKAGE_PATH', '/home/ws/install/allan_variance_ros2/share:/home/ws/install/allan_variance_ros/share'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/install/allan_variance_ros2/lib:/home/ws/install/allan_variance_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/home/christian-nils'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-a682c045-47ff-47f6-be64-7e06d8baac35.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ws/install/allan_variance_ros2/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros2/lib/pkgconfig:/home/ws/install/allan_variance_ros/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock","/tmp/.X11-unix/X1","/home/christian-nils/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-36fc3ff94f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/allan_variance_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble')]), 'shell': False}
+[1.558327] (allan_variance_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.566142] (allan_variance_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.572464] (allan_variance_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_allan_variance_msgs\n'}
+[1.601327] (-) TimerEvent: {}
+[1.701570] (-) TimerEvent: {}
+[1.775219] (allan_variance_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.775439] (allan_variance_msgs) StdoutLine: {'line': b'creating allan_variance_msgs.egg-info\n'}
+[1.775607] (allan_variance_msgs) StdoutLine: {'line': b'writing allan_variance_msgs.egg-info/PKG-INFO\n'}
+[1.775751] (allan_variance_msgs) StdoutLine: {'line': b'writing dependency_links to allan_variance_msgs.egg-info/dependency_links.txt\n'}
+[1.776330] (allan_variance_msgs) StdoutLine: {'line': b'writing top-level names to allan_variance_msgs.egg-info/top_level.txt\n'}
+[1.776458] (allan_variance_msgs) StdoutLine: {'line': b"writing manifest file 'allan_variance_msgs.egg-info/SOURCES.txt'\n"}
+[1.779189] (allan_variance_msgs) StdoutLine: {'line': b"reading manifest file 'allan_variance_msgs.egg-info/SOURCES.txt'\n"}
+[1.779897] (allan_variance_msgs) StdoutLine: {'line': b"writing manifest file 'allan_variance_msgs.egg-info/SOURCES.txt'\n"}
+[1.785047] (allan_variance_msgs) StdoutLine: {'line': b'[  6%] Built target allan_variance_msgs__cpp\n'}
+[1.793051] (allan_variance_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.793264] (allan_variance_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.793369] (allan_variance_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/allan_variance_msgs__rosidl_generator_c.dir/rosidl_generator_c/allan_variance_msgs/msg/detail/imu9_do_f__functions.c.o\x1b[0m\n'}
+[1.794328] (allan_variance_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.801629] (-) TimerEvent: {}
+[1.811079] (allan_variance_msgs) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_allan_variance_msgs_egg\n'}
+[1.856541] (allan_variance_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library liballan_variance_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.884944] (allan_variance_msgs) StdoutLine: {'line': b'[ 22%] Built target allan_variance_msgs__rosidl_generator_c\n'}
+[1.892437] (allan_variance_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.892665] (allan_variance_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.893420] (allan_variance_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.901711] (-) TimerEvent: {}
+[2.001959] (-) TimerEvent: {}
+[2.004304] (allan_variance_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/allan_variance_msgs/msg/imu9_do_f__type_support.cpp.o\x1b[0m\n'}
+[2.014003] (allan_variance_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/allan_variance_msgs/msg/detail/imu9_do_f__type_support.cpp.o\x1b[0m\n'}
+[2.025833] (allan_variance_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/allan_variance_msgs/msg/detail/dds_fastrtps/imu9_do_f__type_support.cpp.o\x1b[0m\n'}
+[2.102059] (-) TimerEvent: {}
+[2.115696] (allan_variance_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/allan_variance_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/allan_variance_msgs/msg/detail/imu9_do_f__type_support.c.o\x1b[0m\n'}
+[2.125487] (allan_variance_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/allan_variance_msgs/msg/imu9_do_f__type_support.cpp.o\x1b[0m\n'}
+[2.151417] (allan_variance_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library liballan_variance_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.155272] (allan_variance_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library liballan_variance_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.164000] (allan_variance_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/allan_variance_msgs/msg/detail/imu9_do_f__type_support_c.cpp.o\x1b[0m\n'}
+[2.181043] (allan_variance_msgs) StdoutLine: {'line': b'[ 58%] Built target allan_variance_msgs__rosidl_typesupport_introspection_c\n'}
+[2.192272] (allan_variance_msgs) StdoutLine: {'line': b'[ 58%] Built target allan_variance_msgs__rosidl_typesupport_c\n'}
+[2.202180] (-) TimerEvent: {}
+[2.257295] (allan_variance_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library liballan_variance_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.288539] (allan_variance_msgs) StdoutLine: {'line': b'[ 61%] Built target allan_variance_msgs__rosidl_typesupport_cpp\n'}
+[2.302281] (-) TimerEvent: {}
+[2.375357] (allan_variance_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library liballan_variance_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.402409] (-) TimerEvent: {}
+[2.429952] (allan_variance_msgs) StdoutLine: {'line': b'[ 64%] Built target allan_variance_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.430128] (allan_variance_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library liballan_variance_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.477516] (allan_variance_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library liballan_variance_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.496905] (allan_variance_msgs) StdoutLine: {'line': b'[ 70%] Built target allan_variance_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.502502] (-) TimerEvent: {}
+[2.536599] (allan_variance_msgs) StdoutLine: {'line': b'[ 70%] Built target allan_variance_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.551066] (allan_variance_msgs) StdoutLine: {'line': b'[ 70%] Built target allan_variance_msgs\n'}
+[2.565914] (allan_variance_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.602610] (-) TimerEvent: {}
+[2.702875] (-) TimerEvent: {}
+[2.803131] (-) TimerEvent: {}
+[2.830490] (allan_variance_msgs) StdoutLine: {'line': b'[ 74%] Built target allan_variance_msgs__py\n'}
+[2.845614] (allan_variance_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/allan_variance_msgs__rosidl_generator_py.dir/rosidl_generator_py/allan_variance_msgs/msg/_imu9_do_f_s.c.o\x1b[0m\n'}
+[2.903224] (-) TimerEvent: {}
+[2.936608] (allan_variance_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/allan_variance_msgs/liballan_variance_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.968776] (allan_variance_msgs) StdoutLine: {'line': b'[ 80%] Built target allan_variance_msgs__rosidl_generator_py\n'}
+[2.985098] (allan_variance_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/allan_variance_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/allan_variance_msgs/_allan_variance_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.985295] (allan_variance_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/allan_variance_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/allan_variance_msgs/_allan_variance_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.986119] (allan_variance_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/allan_variance_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/allan_variance_msgs/_allan_variance_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.003343] (-) TimerEvent: {}
+[3.077127] (allan_variance_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.077360] (allan_variance_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.082778] (allan_variance_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.103435] (-) TimerEvent: {}
+[3.107735] (allan_variance_msgs) StdoutLine: {'line': b'[100%] Built target allan_variance_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.107880] (allan_variance_msgs) StdoutLine: {'line': b'[100%] Built target allan_variance_msgs__rosidl_typesupport_c__pyext\n'}
+[3.113364] (allan_variance_msgs) StdoutLine: {'line': b'[100%] Built target allan_variance_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.121381] (allan_variance_msgs) CommandEnded: {'returncode': 0}
+[3.159626] (allan_variance_msgs) JobProgress: {'identifier': 'allan_variance_msgs', 'progress': 'install'}
+[3.166005] (allan_variance_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ws/build/allan_variance_msgs'], 'cwd': '/home/ws/build/allan_variance_msgs', 'env': OrderedDict([('HOSTNAME', 'als-of-wl2912'), ('ROS_PACKAGE_PATH', '/home/ws/install/allan_variance_ros2/share:/home/ws/install/allan_variance_ros/share'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/install/allan_variance_ros2/lib:/home/ws/install/allan_variance_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/home/christian-nils'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-a682c045-47ff-47f6-be64-7e06d8baac35.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ws/install/allan_variance_ros2/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros2/lib/pkgconfig:/home/ws/install/allan_variance_ros/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock","/tmp/.X11-unix/X1","/home/christian-nils/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-36fc3ff94f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/allan_variance_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble')]), 'shell': False}
+[3.171150] (allan_variance_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.171553] (allan_variance_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.171757] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/ament_index/resource_index/rosidl_interfaces/allan_variance_msgs\n'}
+[3.178128] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__functions.h\n'}
+[3.183749] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__struct.h\n'}
+[3.190038] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__type_support.h\n'}
+[3.195927] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/imu9_do_f.h\n'}
+[3.201698] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.203533] (-) TimerEvent: {}
+[3.207464] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/library_path.sh\n'}
+[3.213672] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/library_path.dsv\n'}
+[3.220130] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__rosidl_typesupport_fastrtps_c.h\n'}
+[3.226166] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.232886] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__builder.hpp\n'}
+[3.238927] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__struct.hpp\n'}
+[3.245314] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__traits.hpp\n'}
+[3.251276] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/imu9_do_f.hpp\n'}
+[3.257335] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.263658] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.269724] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__rosidl_typesupport_introspection_c.h\n'}
+[3.275551] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.281676] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/include/allan_variance_msgs/allan_variance_msgs/msg/detail/imu9_do_f__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.287880] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/pythonpath.sh\n'}
+[3.293720] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/pythonpath.dsv\n'}
+[3.299508] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.303617] (-) TimerEvent: {}
+[3.305648] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.311813] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.318271] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.334212] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/__init__.py\n'}
+[3.340899] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/_allan_variance_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.347613] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/_allan_variance_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.353540] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/_allan_variance_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.359688] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.365494] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.371437] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.377533] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/liballan_variance_msgs__rosidl_generator_py.so\n'}
+[3.383223] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/msg/__init__.py\n'}
+[3.389026] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/msg/_imu9_do_f.py\n'}
+[3.395175] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/msg/_imu9_do_f_s.c\n'}
+[3.401651] (allan_variance_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.401876] (allan_variance_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.402037] (allan_variance_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/allan_variance_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.402212] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/msg/Imu9DoF.idl\n'}
+[3.403654] (-) TimerEvent: {}
+[3.408481] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/msg/Imu9DoF.msg\n'}
+[3.415112] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/ament_index/resource_index/package_run_dependencies/allan_variance_msgs\n'}
+[3.421593] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/ament_index/resource_index/parent_prefix_path/allan_variance_msgs\n'}
+[3.428382] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/ament_prefix_path.sh\n'}
+[3.435285] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/ament_prefix_path.dsv\n'}
+[3.442378] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/path.sh\n'}
+[3.448862] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/environment/path.dsv\n'}
+[3.455414] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/local_setup.bash\n'}
+[3.461877] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/local_setup.sh\n'}
+[3.468112] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/local_setup.zsh\n'}
+[3.475543] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/local_setup.dsv\n'}
+[3.482234] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.dsv\n'}
+[3.488577] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/ament_index/resource_index/packages/allan_variance_msgs\n'}
+[3.495788] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.502006] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.503735] (-) TimerEvent: {}
+[3.508912] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.515757] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.524426] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.531052] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.537617] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.544486] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgsConfig.cmake\n'}
+[3.550779] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgsConfig-version.cmake\n'}
+[3.557156] (allan_variance_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.xml\n'}
+[3.564565] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_generator_c.so\n'}
+[3.564864] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_generator_c.so" to ""\n'}
+[3.565035] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.565191] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.565315] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.565509] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.565624] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.565832] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.565966] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_c.so\n'}
+[3.566097] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.566213] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.566404] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.566521] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_cpp.so\n'}
+[3.566690] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.599085] (allan_variance_msgs) StdoutLine: {'line': b"Listing '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs'...\n"}
+[3.599221] (allan_variance_msgs) StdoutLine: {'line': b"Compiling '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/__init__.py'...\n"}
+[3.599281] (allan_variance_msgs) StdoutLine: {'line': b"Listing '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/msg'...\n"}
+[3.599332] (allan_variance_msgs) StdoutLine: {'line': b"Compiling '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/msg/__init__.py'...\n"}
+[3.599381] (allan_variance_msgs) StdoutLine: {'line': b"Compiling '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages/allan_variance_msgs/msg/_imu9_do_f.py'...\n"}
+[3.603137] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_generator_py.so\n'}
+[3.603346] (allan_variance_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/install/allan_variance_msgs/lib/liballan_variance_msgs__rosidl_generator_py.so" to ""\n'}
+[3.603494] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_generator_cExport.cmake\n'}
+[3.603587] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.603728] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.603809] (-) TimerEvent: {}
+[3.603893] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.604035] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.604126] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.604213] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.604316] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.604459] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.604562] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.604709] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.604847] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.604958] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.605105] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.605184] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/allan_variance_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.605309] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.605414] (allan_variance_msgs) StdoutLine: {'line': b'-- Installing: /home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake/export_allan_variance_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.607178] (allan_variance_msgs) CommandEnded: {'returncode': 0}
+[3.672085] (allan_variance_msgs) JobEnded: {'identifier': 'allan_variance_msgs', 'rc': 0}
+[3.672788] (allan_variance_ros2) JobStarted: {'identifier': 'allan_variance_ros2'}
+[3.678675] (allan_variance_ros2) JobProgress: {'identifier': 'allan_variance_ros2', 'progress': 'cmake'}
+[3.679301] (allan_variance_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/ws/src/allan_variance_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ws/install/allan_variance_ros2'], 'cwd': '/home/ws/build/allan_variance_ros2', 'env': OrderedDict([('HOSTNAME', 'als-of-wl2912'), ('ROS_PACKAGE_PATH', '/home/ws/install/allan_variance_ros2/share:/home/ws/install/allan_variance_ros/share'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/home/christian-nils'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-a682c045-47ff-47f6-be64-7e06d8baac35.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ws/install/allan_variance_ros2/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros2/lib/pkgconfig:/home/ws/install/allan_variance_ros/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock","/tmp/.X11-unix/X1","/home/christian-nils/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-36fc3ff94f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/allan_variance_ros2'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble')]), 'shell': False}
+[3.703907] (-) TimerEvent: {}
+[3.720460] (allan_variance_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.764110] (allan_variance_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.769631] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.803993] (-) TimerEvent: {}
+[3.818579] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.825441] (allan_variance_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.825606] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.825990] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.828483] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.890167] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.897055] (allan_variance_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.897216] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.897645] (allan_variance_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.899594] (allan_variance_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.904087] (-) TimerEvent: {}
+[4.004382] (-) TimerEvent: {}
+[4.048511] (allan_variance_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[4.101525] (allan_variance_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.104462] (-) TimerEvent: {}
+[4.123514] (allan_variance_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.156207] (allan_variance_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.160501] (allan_variance_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.168047] (allan_variance_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.180226] (allan_variance_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.197700] (allan_variance_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.204554] (-) TimerEvent: {}
+[4.261155] (allan_variance_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.263537] (allan_variance_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.304632] (-) TimerEvent: {}
+[4.337881] (allan_variance_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.352623] (allan_variance_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.383891] (allan_variance_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.391892] (allan_variance_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.404723] (-) TimerEvent: {}
+[4.453649] (allan_variance_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.454161] (allan_variance_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.504828] (-) TimerEvent: {}
+[4.510150] (allan_variance_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.511043] (allan_variance_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.604938] (-) TimerEvent: {}
+[4.690994] (allan_variance_ros2) StdoutLine: {'line': b'-- Found rosbag2_cpp: 0.15.7 (/opt/ros/humble/share/rosbag2_cpp/cmake)\n'}
+[4.705050] (-) TimerEvent: {}
+[4.750856] (allan_variance_ros2) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[4.753716] (allan_variance_ros2) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.805162] (-) TimerEvent: {}
+[4.814188] (allan_variance_ros2) StdoutLine: {'line': b'-- Found tf2: 0.25.3 (/opt/ros/humble/share/tf2/cmake)\n'}
+[4.824303] (allan_variance_ros2) StdoutLine: {'line': b'-- Found allan_variance_msgs: 0.0.0 (/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/cmake)\n'}
+[4.905289] (-) TimerEvent: {}
+[5.005554] (-) TimerEvent: {}
+[5.084604] (allan_variance_ros2) StdoutLine: {'line': b'-- Found OpenMP_C: -fopenmp (found version "4.5") \n'}
+[5.105629] (-) TimerEvent: {}
+[5.157710] (allan_variance_ros2) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[5.157974] (allan_variance_ros2) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5")  \n'}
+[5.158164] (allan_variance_ros2) StdoutLine: {'line': b'-- OpenMP found will try to link!\n'}
+[5.205713] (-) TimerEvent: {}
+[5.215605] (allan_variance_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.227285] (allan_variance_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[5.228561] (allan_variance_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/ws/build/allan_variance_ros2\n'}
+[5.234223] (allan_variance_ros2) CommandEnded: {'returncode': 0}
+[5.234871] (allan_variance_ros2) JobProgress: {'identifier': 'allan_variance_ros2', 'progress': 'build'}
+[5.235228] (allan_variance_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ws/build/allan_variance_ros2', '--', '-j12', '-l12'], 'cwd': '/home/ws/build/allan_variance_ros2', 'env': OrderedDict([('HOSTNAME', 'als-of-wl2912'), ('ROS_PACKAGE_PATH', '/home/ws/install/allan_variance_ros2/share:/home/ws/install/allan_variance_ros/share'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/home/christian-nils'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-a682c045-47ff-47f6-be64-7e06d8baac35.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ws/install/allan_variance_ros2/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros2/lib/pkgconfig:/home/ws/install/allan_variance_ros/lib/x86_64-linux-gnu/pkgconfig:/home/ws/install/allan_variance_ros/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock","/tmp/.X11-unix/X1","/home/christian-nils/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-36fc3ff94f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-eee27fe6-5b20-4ab0-88a9-94777159e8f2.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/allan_variance_ros2'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble')]), 'shell': False}
+[5.271779] (allan_variance_ros2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/yaml_parsers.cpp.o\x1b[0m\n'}
+[5.271918] (allan_variance_ros2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/ImuMeasurement.cpp.o\x1b[0m\n'}
+[5.272052] (allan_variance_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o\x1b[0m\n'}
+[5.305801] (-) TimerEvent: {}
+[5.406057] (-) TimerEvent: {}
+[5.506289] (-) TimerEvent: {}
+[5.606599] (-) TimerEvent: {}
+[5.706821] (-) TimerEvent: {}
+[5.807050] (-) TimerEvent: {}
+[5.907323] (-) TimerEvent: {}
+[6.007632] (-) TimerEvent: {}
+[6.025748] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/ImuMeasurement.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KImuMeasurement::ImuMeasurement(uint64_t, const Vector3d&, const Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.025979] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/ImuMeasurement.cpp:12:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[K_I_a_WI\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.026106] (allan_variance_ros2) StderrLine: {'line': b'   12 |                                \x1b[01;35m\x1b[Kconst Eigen::Vector3d& _I_a_WI\x1b[m\x1b[K,\n'}
+[6.026208] (allan_variance_ros2) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.026303] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/ImuMeasurement.cpp:13:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[K_I_w_WI\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.026403] (allan_variance_ros2) StderrLine: {'line': b'   13 |                                \x1b[01;35m\x1b[Kconst Eigen::Vector3d& _I_w_WI\x1b[m\x1b[K){\n'}
+[6.026498] (allan_variance_ros2) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.107728] (-) TimerEvent: {}
+[6.208022] (-) TimerEvent: {}
+[6.308322] (-) TimerEvent: {}
+[6.408628] (-) TimerEvent: {}
+[6.508869] (-) TimerEvent: {}
+[6.609144] (-) TimerEvent: {}
+[6.709426] (-) TimerEvent: {}
+[6.809663] (-) TimerEvent: {}
+[6.909913] (-) TimerEvent: {}
+[7.010187] (-) TimerEvent: {}
+[7.110446] (-) TimerEvent: {}
+[7.210723] (-) TimerEvent: {}
+[7.310973] (-) TimerEvent: {}
+[7.411228] (-) TimerEvent: {}
+[7.511476] (-) TimerEvent: {}
+[7.611780] (-) TimerEvent: {}
+[7.712055] (-) TimerEvent: {}
+[7.812316] (-) TimerEvent: {}
+[7.912627] (-) TimerEvent: {}
+[7.944236] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kallan_variance_ros::AllanVarianceComputor::AllanVarianceComputor(rclcpp::Node*, std::string, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.944403] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:6:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knh\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.944462] (allan_variance_ros2) StderrLine: {'line': b'    6 | AllanVarianceComputor::AllanVarianceComputor(\x1b[01;35m\x1b[Krclcpp::Node* nh\x1b[m\x1b[K, std::string config_file, std::string output_path)\n'}
+[7.944515] (allan_variance_ros2) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[7.947554] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid allan_variance_ros::AllanVarianceComputor::run(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.948117] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:60:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kloop variable \xe2\x80\x98\x1b[01m\x1b[Kavailable_topic\x1b[m\x1b[K\xe2\x80\x99 creates a copy from type \xe2\x80\x98\x1b[01m\x1b[Kconst rosbag2_storage::TopicMetadata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrange-loop-construct\x07-Wrange-loop-construct\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.948180] (allan_variance_ros2) StderrLine: {'line': b'   60 |     for (const auto \x1b[01;35m\x1b[Kavailable_topic\x1b[m\x1b[K : available_topics)\n'}
+[7.948237] (allan_variance_ros2) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.948283] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:60:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kuse reference type to prevent copying\n'}
+[7.948330] (allan_variance_ros2) StderrLine: {'line': b'   60 |     for (const auto \x1b[01;36m\x1b[Kavailable_topic\x1b[m\x1b[K : available_topics)\n'}
+[7.948374] (allan_variance_ros2) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.948419] (allan_variance_ros2) StderrLine: {'line': b'      |                     \x1b[32m\x1b[K&\x1b[m\x1b[K\n'}
+[7.949605] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:70:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu9_do_f\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kallan_variance_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.949703] (allan_variance_ros2) StderrLine: {'line': b'   70 |     std::shared_ptr<allan_variance_msgs::\x1b[01;31m\x1b[Kimu9_do_f\x1b[m\x1b[K> msg;\n'}
+[7.949755] (allan_variance_ros2) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.949807] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:70:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[7.949857] (allan_variance_ros2) StderrLine: {'line': b'   70 |     std::shared_ptr<allan_variance_msgs::imu9_do_f\x1b[01;31m\x1b[K>\x1b[m\x1b[K msg;\n'}
+[7.949906] (allan_variance_ros2) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.950046] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:73:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 in assignment\n'}
+[7.950176] (allan_variance_ros2) StderrLine: {'line': b'   73 |       msg = \x1b[01;31m\x1b[Kbag.read_next()\x1b[m\x1b[K;\n'}
+[7.950228] (allan_variance_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[7.950277] (allan_variance_ros2) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[7.950324] (allan_variance_ros2) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage>\x1b[m\x1b[K\n'}
+[7.950371] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:75:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[7.950424] (allan_variance_ros2) StderrLine: {'line': b'   75 |       std::cerr << msg\x1b[01;31m\x1b[K->\x1b[m\x1b[Ktime_stamp << std::endl;\n'}
+[7.950469] (allan_variance_ros2) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.950513] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:76:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[7.950558] (allan_variance_ros2) StderrLine: {'line': b'   76 |       std::cerr << msg\x1b[01;31m\x1b[K->\x1b[m\x1b[Ktopic_name << std::endl;\n'}
+[7.950640] (allan_variance_ros2) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.950702] (allan_variance_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:34:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kimu_counter\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.950753] (allan_variance_ros2) StderrLine: {'line': b'   34 |   int \x1b[01;35m\x1b[Kimu_counter\x1b[m\x1b[K = 0;\n'}
+[7.950797] (allan_variance_ros2) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.012709] (-) TimerEvent: {}
+[8.112923] (-) TimerEvent: {}
+[8.213142] (-) TimerEvent: {}
+[8.313396] (-) TimerEvent: {}
+[8.413656] (-) TimerEvent: {}
+[8.510310] (allan_variance_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/allan_variance_ros2.dir/build.make:104: CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o] Error 1\n'}
+[8.510480] (allan_variance_ros2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/allan_variance_ros2.dir/all] Error 2\n'}
+[8.510564] (allan_variance_ros2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.511985] (allan_variance_ros2) CommandEnded: {'returncode': 2}
+[8.513755] (-) TimerEvent: {}
+[8.545094] (allan_variance_ros2) JobEnded: {'identifier': 'allan_variance_ros2', 'rc': 2}
+[8.555514] (-) EventReactorShutdown: {}

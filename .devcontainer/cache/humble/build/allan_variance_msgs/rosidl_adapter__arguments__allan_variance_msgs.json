@@ -1,0 +1,6 @@
+{
+  "package_name": "allan_variance_msgs",
+  "non_idl_tuples": [
+    "/home/ws/src/allan_variance_msgs:msg/Imu9DoF.msg"
+  ]
+}

@@ -1,0 +1,49 @@
+[0.008s] Invoking command in '/home/ws/build/allan_variance_ros2': CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12
+[0.053s] [ 16%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o[0m
+[2.753s] [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In constructor ‘[01m[Kallan_variance_ros::AllanVarianceComputor::AllanVarianceComputor(rclcpp::Node*, std::string, std::string)[m[K’:
+[2.753s] [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:6:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.753s]     6 | AllanVarianceComputor::AllanVarianceComputor([01;35m[Krclcpp::Node* nh[m[K, std::string config_file, std::string output_path)
+[2.753s]       |                                              [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[2.757s] [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In member function ‘[01m[Kvoid allan_variance_ros::AllanVarianceComputor::run(std::string)[m[K’:
+[2.757s] [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:61:21:[m[K [01;35m[Kwarning: [m[Kloop variable ‘[01m[Kavailable_topic[m[K’ creates a copy from type ‘[01m[Kconst rosbag2_storage::TopicMetadata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrange-loop-construct-Wrange-loop-construct]8;;[m[K]
+[2.757s]    61 |     for (const auto [01;35m[Kavailable_topic[m[K : available_topics)
+[2.757s]       |                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[2.757s] [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:61:21:[m[K [01;36m[Knote: [m[Kuse reference type to prevent copying
+[2.757s]    61 |     for (const auto [01;36m[Kavailable_topic[m[K : available_topics)
+[2.757s]       |                     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.757s]       |                     [32m[K&[m[K
+[2.764s] [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:36:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kimu_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.764s]    36 |   int [01;35m[Kimu_counter[m[K = 0;
+[2.764s]       |       [01;35m[K^~~~~~~~~~~[m[K
+[3.763s] [ 33%] [32m[1mLinking CXX shared library liballan_variance_ros2.so[0m
+[3.895s] [ 66%] Built target allan_variance_ros2
+[3.908s] [35m[1mConsolidate compiler generated dependencies of target allan_variance[0m
+[3.925s] [ 83%] [32mBuilding CXX object CMakeFiles/allan_variance.dir/src/allan_variance.cpp.o[0m
+[7.718s] [100%] [32m[1mLinking CXX executable allan_variance[0m
+[7.831s] [100%] Built target allan_variance
+[7.842s] Invoked command in '/home/ws/build/allan_variance_ros2' returned '0': CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12
+[7.864s] Invoking command in '/home/ws/build/allan_variance_ros2': CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ws/build/allan_variance_ros2
+[7.870s] -- Install configuration: ""
+[7.870s] -- Execute custom install script
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/include/allan_variance_ros2/AllanVarianceComputor.hpp
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/include/allan_variance_ros2/ImuMeasurement.hpp
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/include/allan_variance_ros2/yaml_parsers.hpp
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/lib/allan_variance_ros2/allan_variance
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/launch/record.launch
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/ament_index/resource_index/package_run_dependencies/allan_variance_ros2
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/ament_index/resource_index/parent_prefix_path/allan_variance_ros2
+[7.871s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/environment/ament_prefix_path.sh
+[7.872s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/environment/ament_prefix_path.dsv
+[7.872s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/environment/path.sh
+[7.872s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/environment/path.dsv
+[7.872s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/local_setup.bash
+[7.872s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/local_setup.sh
+[7.872s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/local_setup.zsh
+[7.872s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/local_setup.dsv
+[7.872s] -- Symlinking: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.dsv
+[7.879s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/ament_index/resource_index/packages/allan_variance_ros2
+[7.879s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/cmake/ConfigExtras.cmake
+[7.879s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/cmake/allan_variance_ros2Config.cmake
+[7.879s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/cmake/allan_variance_ros2Config-version.cmake
+[7.879s] -- Up-to-date symlink: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.xml
+[7.882s] Invoked command in '/home/ws/build/allan_variance_ros2' returned '0': CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ws/build/allan_variance_ros2

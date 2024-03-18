@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target allan_variance_ros2[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library liballan_variance_ros2.so[0m
+[ 66%] Built target allan_variance_ros2
+[ 83%] [32mBuilding CXX object CMakeFiles/allan_variance.dir/src/allan_variance.cpp.o[0m

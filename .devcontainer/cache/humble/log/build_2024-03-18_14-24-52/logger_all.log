@@ -1,0 +1,236 @@
+[0.259s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.259s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f9a00084610>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9a00846ec0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9a00846ec0>>, mixin_verb=('build',))
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.287s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ws'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ros'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(data/config) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'ros'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['cmake', 'python']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'cmake'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'python'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['python_setup_py']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'python_setup_py'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_msgs) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'src/allan_variance_msgs' with type 'ros.ament_cmake' and name 'allan_variance_msgs'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/allan_variance_ros2) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package 'src/allan_variance_ros2' with type 'ros.ament_cmake' and name 'allan_variance_ros2'
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'cmake_target' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.325s] DEBUG:colcon.colcon_core.verb:Building package 'allan_variance_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ws/build/allan_variance_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ws/install/allan_variance_msgs', 'merge_install': False, 'path': '/home/ws/src/allan_variance_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'allan_variance_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'allan_variance_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ws/build/allan_variance_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ws/install/allan_variance_ros2', 'merge_install': False, 'path': '/home/ws/src/allan_variance_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.327s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.330s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ws/src/allan_variance_msgs' with build type 'ament_cmake'
+[0.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ws/src/allan_variance_msgs'
+[0.333s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ws/build/allan_variance_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ws/build/allan_variance_msgs -- -j12 -l12
+[0.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ws/build/allan_variance_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ws/build/allan_variance_msgs -- -j12 -l12
+[0.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ws/build/allan_variance_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ws/build/allan_variance_msgs
+[0.741s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(allan_variance_msgs)
+[0.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ws/build/allan_variance_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ws/build/allan_variance_msgs
+[0.745s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs' for CMake module files
+[0.746s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs' for CMake config files
+[0.746s] Level 1:colcon.colcon_core.shell:create_environment_hook('allan_variance_msgs', 'cmake_prefix_path')
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/cmake_prefix_path.ps1'
+[0.748s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/cmake_prefix_path.dsv'
+[0.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/cmake_prefix_path.sh'
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/lib'
+[0.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('allan_variance_msgs', 'ld_library_path_lib')
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/ld_library_path_lib.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/ld_library_path_lib.dsv'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/ld_library_path_lib.sh'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/bin'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/lib/pkgconfig/allan_variance_msgs.pc'
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/lib/python3.10/site-packages'
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/bin'
+[0.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.sh'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.bash'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.zsh'
+[0.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ws/install/allan_variance_msgs/share/colcon-core/packages/allan_variance_msgs)
+[0.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(allan_variance_msgs)
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs' for CMake module files
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs' for CMake config files
+[0.798s] Level 1:colcon.colcon_core.shell:create_environment_hook('allan_variance_msgs', 'cmake_prefix_path')
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/cmake_prefix_path.ps1'
+[0.800s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/cmake_prefix_path.dsv'
+[0.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/cmake_prefix_path.sh'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/lib'
+[0.800s] Level 1:colcon.colcon_core.shell:create_environment_hook('allan_variance_msgs', 'ld_library_path_lib')
+[0.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/ld_library_path_lib.ps1'
+[0.802s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/ld_library_path_lib.dsv'
+[0.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/hook/ld_library_path_lib.sh'
+[0.802s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/bin'
+[0.802s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/lib/pkgconfig/allan_variance_msgs.pc'
+[0.802s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/lib/python3.10/site-packages'
+[0.803s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_msgs/bin'
+[0.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.ps1'
+[0.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.dsv'
+[0.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.sh'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.bash'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_msgs/share/allan_variance_msgs/package.zsh'
+[0.805s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ws/install/allan_variance_msgs/share/colcon-core/packages/allan_variance_msgs)
+[0.806s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ws/src/allan_variance_ros2' with build type 'ament_cmake'
+[0.806s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ws/src/allan_variance_ros2'
+[0.807s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.807s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ws/build/allan_variance_ros2': CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12
+[4.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ws/build/allan_variance_ros2' returned '2': CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:/home/ws/install/allan_variance_ros2/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12
+[4.152s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(allan_variance_ros2)
+[4.153s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_ros2' for CMake module files
+[4.154s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_ros2' for CMake config files
+[4.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('allan_variance_ros2', 'cmake_prefix_path')
+[4.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/hook/cmake_prefix_path.ps1'
+[4.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/hook/cmake_prefix_path.dsv'
+[4.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/hook/cmake_prefix_path.sh'
+[4.156s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_ros2/lib'
+[4.156s] Level 1:colcon.colcon_core.shell:create_environment_hook('allan_variance_ros2', 'ld_library_path_lib')
+[4.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/hook/ld_library_path_lib.ps1'
+[4.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/hook/ld_library_path_lib.dsv'
+[4.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/hook/ld_library_path_lib.sh'
+[4.158s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_ros2/bin'
+[4.158s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_ros2/lib/pkgconfig/allan_variance_ros2.pc'
+[4.158s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_ros2/lib/python3.10/site-packages'
+[4.159s] Level 1:colcon.colcon_core.environment:checking '/home/ws/install/allan_variance_ros2/bin'
+[4.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.ps1'
+[4.160s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.dsv'
+[4.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.sh'
+[4.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.bash'
+[4.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.zsh'
+[4.161s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ws/install/allan_variance_ros2/share/colcon-core/packages/allan_variance_ros2)
+[4.172s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.172s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.172s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[4.172s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.177s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.177s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.177s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.177s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.179s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[4.179s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.180s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ws/install/local_setup.ps1'
+[4.181s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ws/install/_local_setup_util_ps1.py'
+[4.182s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ws/install/setup.ps1'
+[4.183s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ws/install/local_setup.sh'
+[4.184s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ws/install/_local_setup_util_sh.py'
+[4.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ws/install/setup.sh'
+[4.185s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ws/install/local_setup.bash'
+[4.186s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ws/install/setup.bash'
+[4.187s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ws/install/local_setup.zsh'
+[4.187s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ws/install/setup.zsh'

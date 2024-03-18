@@ -1,0 +1,17 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library liballan_variance_ros2.so[0m
+[ 66%] Built target allan_variance_ros2
+[ 83%] [32mBuilding CXX object CMakeFiles/allan_variance.dir/src/allan_variance.cpp.o[0m
+[100%] [32m[1mLinking CXX executable allan_variance[0m
+[100%] Built target allan_variance
+-- Install configuration: ""
+-- Up-to-date: /home/ws/install/allan_variance_ros2/include
+-- Up-to-date: /home/ws/install/allan_variance_ros2/include/allan_variance_ros2
+-- Installing: /home/ws/install/allan_variance_ros2/include/allan_variance_ros2/ImuMeasurement.hpp
+-- Installing: /home/ws/install/allan_variance_ros2/include/allan_variance_ros2/yaml_parsers.hpp
+-- Installing: /home/ws/install/allan_variance_ros2/include/allan_variance_ros2/AllanVarianceComputor.hpp
+-- Up-to-date: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/launch
+-- Installing: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/launch/record.launch
+-- Installing: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.dsv
+-- Installing: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/cmake/ConfigExtras.cmake
+-- Installing: /home/ws/install/allan_variance_ros2/share/allan_variance_ros2/package.xml

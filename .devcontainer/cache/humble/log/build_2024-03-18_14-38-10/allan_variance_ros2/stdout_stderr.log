@@ -1,0 +1,66 @@
+[35m[1mConsolidate compiler generated dependencies of target allan_variance_ros2[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o[0m
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In constructor ‘[01m[Kallan_variance_ros::AllanVarianceComputor::AllanVarianceComputor(rclcpp::Node*, std::string, std::string)[m[K’:
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:6:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    6 | AllanVarianceComputor::AllanVarianceComputor([01;35m[Krclcpp::Node* nh[m[K, std::string config_file, std::string output_path)
+      |                                              [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In member function ‘[01m[Kvoid allan_variance_ros::AllanVarianceComputor::run(std::string)[m[K’:
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:60:21:[m[K [01;35m[Kwarning: [m[Kloop variable ‘[01m[Kavailable_topic[m[K’ creates a copy from type ‘[01m[Kconst rosbag2_storage::TopicMetadata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrange-loop-construct-Wrange-loop-construct]8;;[m[K]
+   60 |     for (const auto [01;35m[Kavailable_topic[m[K : available_topics)
+      |                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:60:21:[m[K [01;36m[Knote: [m[Kuse reference type to prevent copying
+   60 |     for (const auto [01;36m[Kavailable_topic[m[K : available_topics)
+      |                     [01;36m[K^~~~~~~~~~~~~~~[m[K
+      |                     [32m[K&[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:126:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[K}[m[K’ token
+  126 |     [01;31m[K}[m[K catch (...) {
+      |     [01;31m[K^[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:126:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+  126 |     [01;31m[K}[m[K catch (...) {
+      |     [01;31m[K^[m[K
+      |     [32m[K([m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:126:5:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[K}[m[K’ token
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:118:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K}[m[K’ token
+  118 |     }
+      |      [01;31m[K^[m[K
+      |      [32m[K)[m[K
+......
+  126 |     [32m[K}[m[K catch (...) {
+      |     [32m[K~[m[K 
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:126:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K}[m[K’ token
+  126 |     [01;31m[K}[m[K catch (...) {
+      |     [01;31m[K^[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:34:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kimu_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   34 |   int [01;35m[Kimu_counter[m[K = 0;
+      |       [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K At global scope:
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:126:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kcatch[m[K’
+  126 |     } [01;31m[Kcatch[m[K (...) {
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ws/src/allan_variance_ros2/include/allan_variance_ros2/AllanVarianceComputor.hpp:4[m[K,
+                 from [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:2[m[K:
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:130:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+  130 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(rclcpp::get_logger("rclcpp"),"Finished collecting data. " << imuBuffer_.size() << " measurements");
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:130:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+  130 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(rclcpp::get_logger("rclcpp"),"Finished collecting data. " << imuBuffer_.size() << " measurements");
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:133:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  133 |     [01;31m[Kif[m[K(!imuBuffer_.empty()) {
+      |     [01;31m[K^~[m[K
+[01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:135:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+  135 |     } [01;31m[Kelse[m[K {
+      |       [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/allan_variance_ros2.dir/build.make:104: CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/allan_variance_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

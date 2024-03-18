@@ -1,0 +1,12 @@
+[0.008s] Invoking command in '/home/ws/build/allan_variance_ros2': AMENT_PREFIX_PATH=/home/ws/install/allan_variance_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target allan_variance_ros2[0m
+[0.049s] [ 16%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o[0m
+[0.309s] In file included from [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:2[m[K:
+[0.309s] [01m[K/home/ws/src/allan_variance_ros2/include/allan_variance_ros2/AllanVarianceComputor.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kallan_variance_msgs/msg/Imu9DoF.hpp: No such file or directory
+[0.309s]     9 | #include [01;31m[K"allan_variance_msgs/msg/Imu9DoF.hpp"[m[K
+[0.309s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.309s] compilation terminated.
+[0.320s] gmake[2]: *** [CMakeFiles/allan_variance_ros2.dir/build.make:104: CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o] Error 1
+[0.320s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/allan_variance_ros2.dir/all] Error 2
+[0.320s] gmake: *** [Makefile:146: all] Error 2
+[0.322s] Invoked command in '/home/ws/build/allan_variance_ros2' returned '2': AMENT_PREFIX_PATH=/home/ws/install/allan_variance_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ws/install/allan_variance_msgs:/home/ws/install/allan_variance_ros2:/opt/ros/humble LD_LIBRARY_PATH=/home/ws/install/allan_variance_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ws/install/allan_variance_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ws/build/allan_variance_ros2 -- -j12 -l12

@@ -1,0 +1,8 @@
+In file included from [01m[K/home/ws/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:2[m[K:
+[01m[K/home/ws/src/allan_variance_ros2/include/allan_variance_ros2/AllanVarianceComputor.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kallan_variance_msgs/msg/Imu9DoF.hpp: No such file or directory
+    9 | #include [01;31m[K"allan_variance_msgs/msg/Imu9DoF.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/allan_variance_ros2.dir/build.make:104: CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/allan_variance_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
