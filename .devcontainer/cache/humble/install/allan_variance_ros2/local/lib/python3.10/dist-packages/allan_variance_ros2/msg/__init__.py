@@ -1,1 +1,0 @@
-/home/ws/build/allan_variance_ros2/rosidl_generator_py/allan_variance_ros2/msg/__init__.py

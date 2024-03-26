@@ -71,13 +71,13 @@ void AllanVarianceComputor::run(std::string bag_path) {
     allan_variance_msgs::msg::Imu9DoF::SharedPtr imu9dof_msg = std::make_shared<allan_variance_msgs::msg::Imu9DoF>();
     rclcpp::Serialization<allan_variance_msgs::msg::Imu9DoF> serialization_;
 
-    while (bag.has_next() && ((tCurrNanoSeconds_ - firstTime_) < (sequence_duration_ + sequence_offset_)*10e9))
+    while (bag.has_next() && ((tCurrNanoSeconds_ - firstTime_) < (sequence_duration_ + sequence_offset_)*1e9))
     {
       msg = bag.read_next();
       rclcpp::SerializedMessage serialized_msg(*msg->serialized_data);   
       serialization_.deserialize_message(&serialized_msg, imu9dof_msg.get());
 
-      tCurrNanoSeconds_ = imu9dof_msg->header.stamp.nanosec + imu9dof_msg->header.stamp.sec * 10e9;
+      tCurrNanoSeconds_ = imu9dof_msg->header.stamp.nanosec + imu9dof_msg->header.stamp.sec * 1e9;
       if (firstMsg_)
       {
         firstMsg_ = false;
@@ -95,12 +95,12 @@ void AllanVarianceComputor::run(std::string bag_path) {
 
       lastImuTime_ = tCurrNanoSeconds_;
 
-      if ((tCurrNanoSeconds_ - firstTime_) < sequence_offset_*10e9){
+      if ((tCurrNanoSeconds_ - firstTime_) < sequence_offset_*1e9){
         continue;
       }
 
       ImuMeasurement input;
-      input.t = imu9dof_msg->header.stamp.nanosec + imu9dof_msg->header.stamp.sec*10e9;
+      input.t = imu9dof_msg->header.stamp.nanosec + imu9dof_msg->header.stamp.sec*1e9;
       input.I_a_WI = Eigen::Vector3d(imu9dof_msg->linear_acceleration.x, imu9dof_msg->linear_acceleration.y,
                                       imu9dof_msg->linear_acceleration.z);
       input.I_w_WI =
@@ -126,7 +126,7 @@ void AllanVarianceComputor::run(std::string bag_path) {
       RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Captured unknown exception");
     }
 
-    RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"),"Finished collecting data. " << imuBuffer_.size() << " measurements");
+    RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"),"Finished buffering data. " << imuBuffer_.size() << " measurements");
 
     // Compute Allan Variance here
     if(!imuBuffer_.empty()) {

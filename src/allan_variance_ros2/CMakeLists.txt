@@ -34,6 +34,12 @@ find_package(yaml-cpp REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(allan_variance_msgs REQUIRED) 
 
+# Download the rerun_sdk
+include(FetchContent)
+FetchContent_Declare(rerun_sdk URL
+    https://github.com/rerun-io/rerun/releases/latest/download/rerun_cpp_sdk.zip)
+FetchContent_MakeAvailable(rerun_sdk)
+
 find_package(OpenMP)
 if (OPENMP_FOUND)
   message(STATUS "OpenMP found will try to link!")
@@ -55,10 +61,14 @@ ament_target_dependencies(${PROJECT_NAME} ${COLCON_PACKAGE_DEPENDENCIES})
 add_executable(allan_variance src/allan_variance.cpp)
 target_link_libraries(allan_variance ${PROJECT_NAME} )
 
+add_executable(plot_imu src/plot_imu.cpp)
+target_link_libraries(plot_imu PRIVATE ${PROJECT_NAME} rerun_sdk)
+
 install(DIRECTORY include/ DESTINATION include)
 
 install(TARGETS
   allan_variance
+  plot_imu
   DESTINATION lib/${PROJECT_NAME})
 
 install(
