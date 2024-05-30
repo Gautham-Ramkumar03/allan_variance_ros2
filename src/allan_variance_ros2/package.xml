@@ -8,7 +8,7 @@
   
   <author email="russell@robots.ox.ac.uk">Russell Buchanan</author>
   <author email="christian-nils.boda@autoliv.com">Russell Buchanan</author>
-  <maintainer email="christian-nils.boda@autoliv.com">Russell Buchanan</maintainer>
+  <maintainer email="christian-nils.boda@autoliv.com">Christian-Nils Åkerberg Boda</maintainer>
 
   <license>BSD-3</license>
 
@@ -16,7 +16,6 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>allan_variance_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>tf2</depend>

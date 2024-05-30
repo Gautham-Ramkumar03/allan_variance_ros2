@@ -51,6 +51,13 @@ int main(int argc, char** argv) {
     config_file = argv[2];
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Bag Path = " << bag_path);
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Config File = " << config_file);
+    if (argc >=3){
+      output_path = argv[3];
+      RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Output folder = " << output_path);
+    } else {
+      RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Output folder = " << output_path);
+    }
+    
   }
   else
   {
@@ -63,37 +70,3 @@ int main(int argc, char** argv) {
   rclcpp::shutdown();
   return 0;
 }
-// int main(int argc, char** argv) {
-//   ros::init(argc, argv, "allan_variance_ros");
-
-
-//   namespace fs = boost::filesystem;
-//   fs::path path = fs::absolute(fs::path(bags_folder));
-
-//   std::set<std::string> bag_filenames_sorted;
-//   for (const auto& entry : fs::directory_iterator(path)) {
-//     if (entry.path().extension() == ".bag") {
-//       bag_filenames_sorted.insert(entry.path().string());
-//     }
-//   }
-//   RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Bag filenames count: " << bag_filenames_sorted.size());
-
-//   std::clock_t start = std::clock();
-
-//   allan_variance_ros::AllanVarianceComputor computor(n, config_file, bags_folder);
-//   RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Batch computor constructed");
-//   for (const auto& it : bag_filenames_sorted) {
-//     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Processing rosbag " << it);
-//     computor.run(it);
-//     if (!n.ok()) {
-//       break;
-//     }
-//     // For now just do one rosbag
-//     break;
-//   }
-
-//   double durationTime = (std::clock() - start) / (double)CLOCKS_PER_SEC;
-//   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Total computation time: %f s", durationTime);
-//   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Data written to allan_variance.csv");
-//   return 0;
-// }

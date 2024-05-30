@@ -20,7 +20,7 @@ set(COLCON_PACKAGE_DEPENDENCIES
   tf2
   yaml-cpp
   OpenMP
-  allan_variance_msgs
+  sensor_msgs
 )
 
 find_package(ament_cmake REQUIRED)
@@ -32,7 +32,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(yaml-cpp REQUIRED)
 find_package(Eigen3 REQUIRED)
-find_package(allan_variance_msgs REQUIRED) 
+find_package(sensor_msgs REQUIRED)
 
 # Download the rerun_sdk
 include(FetchContent)

@@ -68,16 +68,16 @@ void AllanVarianceComputor::run(std::string bag_path) {
     }
 
     std::shared_ptr<rosbag2_storage::SerializedBagMessage> msg;
-    allan_variance_msgs::msg::Imu9DoF::SharedPtr imu9dof_msg = std::make_shared<allan_variance_msgs::msg::Imu9DoF>();
-    rclcpp::Serialization<allan_variance_msgs::msg::Imu9DoF> serialization_;
-
+    sensor_msgs::msg::Imu::SharedPtr imu_msg = std::make_shared<sensor_msgs::msg::Imu>();
+    rclcpp::Serialization<sensor_msgs::msg::Imu> serialization_;
+    
     while (bag.has_next() && ((tCurrNanoSeconds_ - firstTime_) < (sequence_duration_ + sequence_offset_)*1e9))
     {
       msg = bag.read_next();
       rclcpp::SerializedMessage serialized_msg(*msg->serialized_data);   
-      serialization_.deserialize_message(&serialized_msg, imu9dof_msg.get());
+      serialization_.deserialize_message(&serialized_msg, imu_msg.get());
 
-      tCurrNanoSeconds_ = imu9dof_msg->header.stamp.nanosec + imu9dof_msg->header.stamp.sec * 1e9;
+      tCurrNanoSeconds_ = imu_msg->header.stamp.nanosec + imu_msg->header.stamp.sec * 1e9;
       if (firstMsg_)
       {
         firstMsg_ = false;
@@ -100,11 +100,11 @@ void AllanVarianceComputor::run(std::string bag_path) {
       }
 
       ImuMeasurement input;
-      input.t = imu9dof_msg->header.stamp.nanosec + imu9dof_msg->header.stamp.sec*1e9;
-      input.I_a_WI = Eigen::Vector3d(imu9dof_msg->linear_acceleration.x, imu9dof_msg->linear_acceleration.y,
-                                      imu9dof_msg->linear_acceleration.z);
+      input.t = imu_msg->header.stamp.nanosec + imu_msg->header.stamp.sec*1e9;
+      input.I_a_WI = Eigen::Vector3d(imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y,
+                                      imu_msg->linear_acceleration.z);
       input.I_w_WI =
-          Eigen::Vector3d(imu9dof_msg->angular_velocity.x, imu9dof_msg->angular_velocity.y, imu9dof_msg->angular_velocity.z);
+          Eigen::Vector3d(imu_msg->angular_velocity.x, imu_msg->angular_velocity.y, imu_msg->angular_velocity.z);
 
       imuBuffer_.push_back(input);
     }
@@ -115,13 +115,6 @@ void AllanVarianceComputor::run(std::string bag_path) {
         return;
       }
     }
-
-    // } catch (rosbag::BagIOException &e) {
-    //   RCLCPP_WARN_STREAM(rclcpp::get_logger("rclcpp"),"Captured rosbag::BagIOException " << e.what());
-    // } catch (rosbag::BagUnindexedException &e) {
-    //   RCLCPP_WARN_STREAM(rclcpp::get_logger("rclcpp"),"Captured rosbag::BagUnindexedException " << e.what());
-    // } catch (std::exception &e) {
-    //   RCLCPP_ERROR_STREAM(rclcpp::get_logger("rclcpp"),e.what());
     catch (...) {
       RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Captured unknown exception");
     }
@@ -135,98 +128,7 @@ void AllanVarianceComputor::run(std::string bag_path) {
       RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "No IMU messages to process, is your topic right?");
     }
 }
-    // // Return if the imu topic is not listed
-    // if (imu_msg_type_==""){
-    //   RCLCPP_ERROR_STREAM(rclcpp::get_logger("rclcpp"),"Topic " << input_topic_ << " not available in the bag.");
-    //   return;
-    // }
-    
-
-    // RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"),"Bag has " << view.size() << " messages, parsing...");
-
-  //   // Loop through data
-  //   time_t start = clock();
-  //   while (bag.has_next())
-  //   {
-  //       // serialized data
-  //       auto serialized_message = bag.read_next();
-  //       rclcpp::SerializedMessage extracted_serialized_msg(*serialized_message->serialized_data);
-  //       auto topic = serialized_message->topic_name;
-  //       if (topic.find(input_topic_) != std::string::npos)
-  //       {
-  //           // serialization_info.deserialize_message(&extracted_serialized_msg, &msg);
-  //       }
-  //   }
-  //   for (const rosbag::MessageInstance &msg : view) {
-  //     // Fill IMU buffer
-  //     if (msg.isType<sensor_msgs::Imu>()) {
-  //       sensor_msgs::ImuConstPtr imu_msg = msg.instantiate<sensor_msgs::Imu>();
-  //       tCurrNanoSeconds_ = imu_msg->header.stamp.toNSec();
-
-  //       imu_counter++;
-
-  //       // Subsample IMU measurements
-  //       if (imu_counter % imu_skip_ != 0 || imu_counter / imu_rate_ > sequence_duration_) {
-  //         continue;
-  //       }
-
-  //       if (difftime(clock(), start) / CLOCKS_PER_SEC >= 2.0) {
-  //         RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"),imu_counter / imu_rate_ << " / " << sequence_duration_ << " seconds loaded");
-  //         start = clock();
-  //       }
-
-  //       if (firstMsg_) {
-  //         firstMsg_ = false;
-  //         firstTime_ = tCurrNanoSeconds_;
-  //         lastImuTime_ = tCurrNanoSeconds_;
-  //       }
-
-  //       if (tCurrNanoSeconds_ < lastImuTime_) {
-  //         skipped_imu_++;
-  //         RCLCPP_ERROR_STREAM(rclcpp::get_logger("rclcpp"),"IMU out of order. Current(ns): "
-  //                          << tCurrNanoSeconds_ - firstTime_ << " Last(ns): "
-  //                          << lastImuTime_ - firstTime_ << " (" << skipped_imu_ << " dropped)");
-  //         continue;
-  //       }
-  //       lastImuTime_ = tCurrNanoSeconds_;
-
-  //       ImuMeasurement input;
-  //       input.t = imu_msg->header.stamp.toNSec();
-  //       input.I_a_WI = Eigen::Vector3d(imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y,
-  //                                      imu_msg->linear_acceleration.z);
-  //       input.I_w_WI =
-  //           Eigen::Vector3d(imu_msg->angular_velocity.x, imu_msg->angular_velocity.y, imu_msg->angular_velocity.z);
-
-  //       imuBuffer_.push_back(input);
-  //     }
-  //     if (!rclcpp::ok()) {
-  //       RCLCPP_ERROR_STREAM(rclcpp::get_logger("rclcpp"),"Stop requested, closing the bag!");
-  //       bag.close();
-  //       return;
-  //     }
-  //   }
-  //   bag.close();
-
-  // } catch (rosbag::BagIOException &e) {
-  //   RCLCPP_WARN_STREAM(rclcpp::get_logger("rclcpp"),"Captured rosbag::BagIOException " << e.what());
-  // } catch (rosbag::BagUnindexedException &e) {
-  //   RCLCPP_WARN_STREAM(rclcpp::get_logger("rclcpp"),"Captured rosbag::BagUnindexedException " << e.what());
-  // } catch (std::exception &e) {
-  //   RCLCPP_ERROR_STREAM(rclcpp::get_logger("rclcpp"),e.what());
-  // } catch (...) {
-  //   RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Captured unknown exception");
-  // }
-
-  // RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"),"Finished collecting data. " << imuBuffer_.size() << " measurements");
-
-  // // Compute Allan Variance here
-  // if(!imuBuffer_.empty()) {
-  //   allanVariance();
-  // } else {
-  //   RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "No IMU messages to process, is your topic right?");
-  // }
-
-
+ 
 void AllanVarianceComputor::closeOutputs() { 
   av_output_.close(); 
   }

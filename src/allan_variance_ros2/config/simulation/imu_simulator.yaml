@@ -11,4 +11,5 @@ gyroscope_bias_init: 0.006
 rostopic: '/sensors/imu'
 update_rate: 400.0
 
-sequence_time: 11000
+sequence_duration: 10800 # duration of the sequence (in seconds)
+sequence_offset: 0 # sequence start within the recorded data (in seconds)

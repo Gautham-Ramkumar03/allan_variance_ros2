@@ -4,7 +4,7 @@
 #include <rosbag2_cpp/readers/sequential_reader.hpp>
 #include <rosbag2_cpp/storage_options.hpp>
 #include <rosbag2_storage/storage_filter.hpp> 
-#include "allan_variance_msgs/msg/imu9_do_f.hpp"
+#include "sensor_msgs/msg/imu.hpp"
 #include <rerun.hpp>
 
 void plot_imu(std::string bag_path, std::string imu_topic);

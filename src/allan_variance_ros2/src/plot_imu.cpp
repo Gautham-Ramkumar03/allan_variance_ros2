@@ -4,7 +4,6 @@
 void plot_imu(std::string bag_path, std::string imu_topic) {
   RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"),"Processing " << bag_path << " ...");
 
-  int imu_counter = 0;
   uint64_t tCurrNanoSeconds_{};
   uint64_t lastImuTime_{};
   uint64_t firstTime_{};
@@ -40,15 +39,12 @@ void plot_imu(std::string bag_path, std::string imu_topic) {
     }
 
     std::shared_ptr<rosbag2_storage::SerializedBagMessage> msg;
-    allan_variance_msgs::msg::Imu9DoF::SharedPtr imu9dof_msg = std::make_shared<allan_variance_msgs::msg::Imu9DoF>();
-    rclcpp::Serialization<allan_variance_msgs::msg::Imu9DoF> serialization_;
+    sensor_msgs::msg::Imu::SharedPtr imu9dof_msg = std::make_shared<sensor_msgs::msg::Imu>();
+    rclcpp::Serialization<sensor_msgs::msg::Imu> serialization_;
     rerun::RecordingStream rec("allan_variance_plot_imu");  
-    // rec.connect();
+    
     while (bag.has_next())
     {
-      // if ( (tCurrNanoSeconds_ - firstTime_) > 3600 * 1e9){
-      //   break;
-      // }
       msg = bag.read_next();
       rclcpp::SerializedMessage serialized_msg(*msg->serialized_data);   
       serialization_.deserialize_message(&serialized_msg, imu9dof_msg.get());
@@ -71,16 +67,6 @@ void plot_imu(std::string bag_path, std::string imu_topic) {
 
       lastImuTime_ = tCurrNanoSeconds_;
 
-      // ImuMeasurement input;
-      // input.t = imu9dof_msg->header.stamp.nanosec + imu9dof_msg->header.stamp.sec*1e9;
-      // input.I_a_WI = Eigen::Vector3d(imu9dof_msg->linear_acceleration.x, imu9dof_msg->linear_acceleration.y,
-      //                                 imu9dof_msg->linear_acceleration.z);
-      // input.I_w_WI =
-      //     Eigen::Vector3d(imu9dof_msg->angular_velocity.x, imu9dof_msg->angular_velocity.y, imu9dof_msg->angular_velocity.z);
-
-      // imuBuffer_.push_back(input);
-      
- 
       // Log data to the internal buffer.
       rec.set_time_nanos("header_timestamp", (int64_t)tCurrNanoSeconds_);
       rec.set_time_nanos("received_timestamp", msg->time_stamp);
