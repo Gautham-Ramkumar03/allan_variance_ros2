@@ -16,8 +16,6 @@ set(COLCON_PACKAGE_DEPENDENCIES
   rclcpp
   rosbag2_cpp
   std_msgs
-  geometry_msgs
-  tf2
   yaml-cpp
   OpenMP
   sensor_msgs
@@ -28,8 +26,6 @@ find_package(rclcpp REQUIRED)
 find_package(rosbag2_cpp REQUIRED)
 find_package(Boost REQUIRED filesystem)
 find_package(std_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(tf2 REQUIRED)
 find_package(yaml-cpp REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(sensor_msgs REQUIRED)
