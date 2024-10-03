@@ -1,36 +1,34 @@
 README NEEDS TO BE UPDATED
 
-# Allan Variance ROS
-## ROS package which loads a rosbag of IMU data and computes Allan Variance parameters
+# Allan Variance ROS2
+## ROS2 package which loads a rosbag of IMU data and computes Allan Variance parameters
 The purpose of this tool is to read a long sequence of IMU data and compute the Angle Random Walk (ARW), Bias Instability and Gyro Random Walk for the gyroscope as well as Velocity Random Walk (VRW), Bias Instability and Accel Random Walk for the accelerometer.
 
 While there are many open source tools which do the same thing, this package has the following features:
 
-- Fully ROS compatable. Simply record a `rosbag` and provide it as input. No conversion required.
+- Fully ROS2 compatible. Simply record a `MCAP` file and provide it as input. No conversion required.
 - Written in C++ making use of rosbag::View means the `rosbag` is processed at maximum speed. No need to play back the bag file.
 - Designed for [Kalibr](https://github.com/ethz-asl/kalibr). Will produce an `imu.yaml` file.
 
-This tool is designed for Ubuntu 20.04. Attempting to use on another distro or version may require some code changes.
-
 ## How to build
 
-``catkin build  allan_variance_ros``
+`colcon build --symlink-install`
 
 ## How to use
 
 1. Place your IMU on some damped surface and record your IMU data to a rosbag. You must record **at least** 3 hours of data. The longer the sequence, the more accurate the results.
 
-2. **Recommended** Reorganize ROS messages by timestamp:
+2. **Recommended** Reorganize ROS2 messages by timestamp:
 
-  ``rosrun allan_variance_ros cookbag.py --input original_rosbag --output cooked_rosbag``
+  ``ros2 run allan_variance_ros2 cookbag.py --input original_rosbag --output cooked_rosbag``
 
 3. Run the Allan Variance computation tool (example config files provided):
 
-  ``rosrun allan_variance_ros allan_variance [path_to_folder_containing_bag] [path_to_config_file]``
+  ``ros2 run allan_variance_ros2 allan_variance [path_to_folder_containing_bag] [path_to_config_file]``
 
 4. This will compute the Allan Deviation for the IMU and generate a CSV. The next step is to visualize the plots and get parameters. For this run:
 
-  ``rosrun allan_variance_ros analysis.py --data allan_variance.csv``
+  ``ros2 run allan_variance_ros2 analysis.py --data allan_variance.csv``
 
   Press `space` to go to next figure.
 
@@ -86,7 +84,7 @@ rostopic: '/sensors/imu' #Make sure this is correct
 update_rate: 400.0 #Make sure this is correct
 
 ```
-## Allan Variance ROS Evaluation
+## Allan Variance ROS2 Evaluation
 
 ### IMU Noise Simulator
 
@@ -96,13 +94,13 @@ As shown in PR https://github.com/ori-drs/allan_variance_ros/pull/24 accuracy is
 
 ### To generate simulated noise
 
-`rosrun allan_variance_ros imu_simulator [path_to_output_bag_file] [path_to_simulation_config_file]`
+`ros2 run allan_variance_ros2 imu_simulator [path_to_output_bag_file] [path_to_simulation_config_file]`
 
 A simulation config file is provided in `allan_variance_ros/config/simulation/imu_simulator.yaml`
 
-### To test Allan Variance ROS on simulated rosbag
+### To test Allan Variance ROS2 on simulated rosbag
 
-  ``rosrun allan_variance_ros allan_variance [path_to_folder_containing_bag] [path_to_config_file]``
+  ``ros2 run allan_variance_ros2 allan_variance [path_to_folder_containing_bag] [path_to_config_file]``
 
 A config file is provided in `allan_variance_ros/config/sim.yaml`
 

@@ -22,7 +22,7 @@ class AllanVarianceRos2 : public rclcpp::Node
     AllanVarianceRos2(std::string bag_path, std::string config_file, std::string output_path)
     : Node("allan_variance_ros2")
     {
-      std::clock_t start = std::clock();
+      std::clock_t start = std::clock();      
       
       allan_variance_ros::AllanVarianceComputor computor(this, config_file, output_path);
       RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Computor constructed");
@@ -45,13 +45,14 @@ int main(int argc, char** argv) {
   std::string bag_path;
   std::string config_file;
   std::string output_path = "data/output";
-  if (argc >= 2)
+  if (argc > 2)
   {
     bag_path = argv[1];
     config_file = argv[2];
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Bag Path = " << bag_path);
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Config File = " << config_file);
-    if (argc >=3){
+    RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "hej");
+    if (argc > 3){
       output_path = argv[3];
       RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Output folder = " << output_path);
     } else {
@@ -64,7 +65,7 @@ int main(int argc, char** argv) {
     RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Rosbag folder and/or config file not provided!");
     return 0;
   }
-
+  
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<AllanVarianceRos2>(bag_path, config_file, output_path));
   rclcpp::shutdown();
