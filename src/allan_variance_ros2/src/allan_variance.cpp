@@ -51,7 +51,6 @@ int main(int argc, char** argv) {
     config_file = argv[2];
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Bag Path = " << bag_path);
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Config File = " << config_file);
-    RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "hej");
     if (argc > 3){
       output_path = argv[3];
       RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Output folder = " << output_path);
