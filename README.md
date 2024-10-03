@@ -67,7 +67,7 @@ If you use this package, or the [original package](https://github.com/ori-drs/al
 
 ## ROS2-port Author:
 
-[Christian-Nils Boda](https://github.com/christian-nils)
+[Christian-Nils Boda](https://github.com/christian-nils) ([Autoliv](https://www.autoliv.com/) Research)
 
 ## References
 
